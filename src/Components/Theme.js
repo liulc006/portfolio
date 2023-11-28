@@ -1,5 +1,7 @@
 import { createTheme } from "@mui/material";
 
+const fontLato = ["Lato", "sans-serif"].join(', ');
+
 const Theme = createTheme({
     palette:{
         primary:{
@@ -13,15 +15,43 @@ const Theme = createTheme({
           },
     },
     typography: {
-        fontFamily: 'Montserrat',
-        h1: {
+        fontFamily: {
+          fontFamily: fontLato
+        },
+        title: {
+          fontFamily: fontLato,
+          fontWeight: 900,
+          fontSize: '2.5rem',
+          // color: 'palette.primary.main',
+          fontStyle: 'italic',
+        },
+        h1:{
+          fontFamily: fontLato,
           fontWeight: 700,
           fontSize: '2.5rem',
-          color: '#fff',
+          // color: '#fff',
+          fontStyle: 'normal',
         },
-        h2: {
-          fontWeight: 600,
-          fontSize: '2.25rem',
+        h2:{
+          fontFamily: fontLato,
+          fontWeight: 500,
+          fontSize: '2rem',
+          // color: '#fff',
+          fontStyle: 'normal',
+        },
+        body:{
+          fontFamily: fontLato,
+          fontWeight: 400,
+          fontSize: '1rem',
+          // color: '#fff',
+          fontStyle: 'normal',
+        },
+        note:{
+          fontFamily: fontLato,
+          fontWeight: 300,
+          fontSize: '1rem',
+          // color: '#fff',
+          fontStyle: 'normal',
         },
     },
     // components: {

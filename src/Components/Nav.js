@@ -3,9 +3,11 @@ import React from "react";
 
 const Nav = () => {
     return (
-        <Box sx={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', backgroundColor:'dodgerblue'}}>
-            <Typography>Luca Liu</Typography>
-            <Box sx={{display:'flex', flexDirection:'row', maxWidth:'100%', width:'50rem', minWidth:'50%', justifyContent:'space-evenly', alignItems:'center'}}>
+        <Box sx={{display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center', backgroundColor:'dodgerblue'}}>
+            <Box sx={{flexGrow:'1', display:'flex', justifyContent:'center'}}>
+                <Typography variant="title" color='primary.main'>LUCA LIU</Typography>
+            </Box>
+            <Box sx={{flexGrow:'3', display:'flex', flexDirection:'row', maxWidth:'100%', minWidth:'30%', justifyContent:'center', alignItems:'center'}}>
                 <Button variant="navigation-button">
                     <Typography>About Me</Typography>
                 </Button>
@@ -13,8 +15,11 @@ const Nav = () => {
                     <Typography>Skills</Typography>
                 </Button>
                 <Button>
-                    <Typography>Contact Me</Typography>
+                    <Typography>Projects</Typography>
                 </Button>
+            </Box>
+            <Box sx={{flexGrow:'1',display:'flex', justifyContent:'center'}}>
+                <Typography>Contact Me</Typography>
             </Box>
         </Box>
     );
