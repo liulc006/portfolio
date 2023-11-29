@@ -1,18 +1,19 @@
-import { createTheme } from "@mui/material";
+import { createTheme, sliderClasses } from "@mui/material";
 
 const fontLato = ["Lato", "sans-serif"].join(', ');
 
 const Theme = createTheme({
     palette:{
         primary:{
-            main:'#FF0000',
+            main:'#151819', //Black
         },
         secondary: {
-            light: '#ffbc43',
-            main: '#ff9500',
-            dark: '#f76621',
-            contrastText: '#000',
+            light: '#f6efe6', //Light Orange
+            main: '#fbb321', //Dense Orange
           },
+        background: {
+          default: '#f6efe6'
+        }
     },
     typography: {
         fontFamily: {
@@ -39,6 +40,13 @@ const Theme = createTheme({
           // color: '#fff',
           fontStyle: 'normal',
         },
+        navButton:{
+          fontFamily: fontLato,
+          fontWeight: 400,
+          fontSize: '1rem',
+          // color: '#fff',
+          fontStyle: 'normal',
+        },
         body:{
           fontFamily: fontLato,
           fontWeight: 400,
@@ -54,18 +62,22 @@ const Theme = createTheme({
           fontStyle: 'normal',
         },
     },
-    // components: {
-    //     MuiButton:{
-    //         variants: [
-    //             {
-    //                 props: {variant: 'navigation-button'},
-    //                 style: {
-    //                     color: '#ffbc43'
-    //                 }
-    //             },
-    //         ]
-    //     },
-    // },
+    components: {
+        MuiButton:{
+          defaultProps:{
+            disableRipple: true,
+          },
+          variants: [
+              {
+                  props: {variant: 'navigation-button'},
+                  style: {
+                      color: '#151819',
+                      "&:hover": { color:'#fbb321'}
+                  }
+              },
+          ]
+        },
+    },
 });
 
 export default Theme;
