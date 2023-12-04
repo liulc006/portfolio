@@ -1,7 +1,11 @@
 import React from "react";
 import { Box, Typography, Divider } from "@mui/material";
+import Tag from "./Tag";
 
 const Home = () => {
+    const skills = ['Python', 'JavaScript', 'React.JS', 'Node.JS', 'Material UI', 'Express.JS', 'Redux.JS', 'PostgreSQL', 'MongoDB', 'Sequelize', 'Mongoose'];
+
+
     return (
         <Box sx={{paddingTop:'6rem',display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100%'}}>
             <Box sx={{minHeight:'50vh', width:'75%', display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center'}}>
@@ -47,6 +51,9 @@ const Home = () => {
                     {/* Skills */}
                     <Box sx={{width:'100%'}}>
                         <Typography variant='h2'>Skill</Typography>
+                        <Box sx={{display:'flex', flexDirection:'row', flexWrap:'wrap'}}>
+                            {skills.map( ele => <Tag key={ele} name={ele}/>)}
+                        </Box>
                     </Box>
                 </Box>
             </Box>
