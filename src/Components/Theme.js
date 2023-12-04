@@ -6,9 +6,11 @@ const Theme = createTheme({
     palette:{
         primary:{
             main:'#151819', //Black
+            light:'#ffffff', //White
         },
         secondary: {
             light: '#f6efe6', //Light Orange
+            lightDark: '#f5e5d0', //darker shade of the light orange
             main: '#fbb321', //Dense Orange
           },
         background: {
