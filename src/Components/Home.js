@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 
 const Home = () => {
     return (
-        <Box sx={{display:'flex', justifyContent:'center', alignItems:'center', width:'100%'}}>
+        <Box sx={{paddingTop:'6rem',display:'flex', justifyContent:'center', alignItems:'center', width:'100%'}}>
             <Box sx={{minHeight:'50vh', width:'75%', display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center'}}>
                 <Box sx={{flex:'2',display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'start', height:'100%', paddingLeft:'1rem'}}>
                     <Typography variant="h1">Welcome! I'm Luca Liu</Typography>

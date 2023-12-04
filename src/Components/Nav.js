@@ -4,7 +4,7 @@ import React from "react";
 const Nav = () => {
     return (
         <>
-            <Box sx={{width:'100%', display:'flex', justifyContent:'center', alignItems:'center'}}>
+            <Box sx={{position:'fixed', width:'100%',height:'6rem', display:'flex', justifyContent:'center', alignItems:'center', backgroundColor:"secondary.light", borderBottom:'1px solid gray'}}>
                 <Box sx={{display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center', width:'80%'}}>
                     <Box sx={{flexGrow:'1', display:'flex', justifyContent:'center'}}>
                         <Typography variant="title" color='secondary.main'>LUCA LIU</Typography>
@@ -27,7 +27,6 @@ const Nav = () => {
                     </Box>
                 </Box>
             </Box>
-            <Divider />
         </>
 
     );
