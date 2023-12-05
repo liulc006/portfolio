@@ -8,7 +8,7 @@ const Footer = () => {
 
 
     return (
-        <Box sx={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
+        <Box sx={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', padding:'1rem'}}>
             <Typography variant="body">Design and developed by Luca Liu</Typography>
             {startYear === currentYear ?
                 <Typography variant="body">© 2023 Luca Liu</Typography>
