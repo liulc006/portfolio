@@ -42,6 +42,13 @@ const Theme = createTheme({
           // color: '#fff',
           fontStyle: 'normal',
         },
+        h3:{
+          fontFamily: fontLato,
+          fontWeight: 400,
+          fontSize: '1.5rem',
+          // color: '#fff',
+          fontStyle: 'normal',
+        },
         navButton:{
           fontFamily: fontLato,
           fontWeight: 400,

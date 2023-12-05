@@ -3,8 +3,9 @@ import { Box, Typography, Divider } from "@mui/material";
 import Tag from "./Tag";
 
 const Home = () => {
-    const skills = ['Python', 'JavaScript', 'React.JS', 'Node.JS', 'Material UI', 'Express.JS', 'Redux.JS', 'PostgreSQL', 'MongoDB', 'Sequelize', 'Mongoose'];
-
+    const otherSkills = ['JavaScript','Git','Python', 'RestAPI', 'NumPy', 'Pandas', 'ROS', 'Scikit-Learn', 'PyTorch', 'TensorFlow', 'HTML', 'CSS'];
+    const frontendSkills = ['React.JS', 'Material UI', 'Redux.JS',];
+    const backendSkills = ['Node.JS', 'Express.JS',  'PostgreSQL', 'MongoDB', 'Sequelize', 'Mongoose'];
 
     return (
         <Box sx={{paddingTop:'6rem',display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100%'}}>
@@ -27,10 +28,19 @@ const Home = () => {
                 <Box sx={{display:'flex', flexDirection:'column',justifyContent:'center', alignItems:'center', paddingTop:'1rem', paddingBottom:'1rem'}}>
                     <Typography variant='h1'>About Me</Typography>
                     <Box sx={{height:'6px', width:'4rem', backgroundColor:'secondary.main', borderRadius:'5px'}}/>
+                    {/* Intro for About Me */}
+                    <Box sx={{width:'65%', display:'flex', justifyContent:'center'}}>
+                        <Typography variant='body' sx={{textAlign:'center', padding:'1rem 0 1rem 0'}}>
+                            Throught the year, I learned a lot of skills and tool in the field of engineering. I have professional and formal education in the field of Mechanical Engineering, 
+                            but also technical and practical experience in programming in the field of Software Development Engineering. 
+                            In the Mechanical Engineering field, I am capable of evaluating, designing and building prototypes of products using CAD tools, machinery and eletronic components.
+                            In the Software Engineering field, I am can design, develop and program Full-Stack web application using a combination of Front-End and Back-End tools. 
+                        </Typography>
+                    </Box>
                 </Box>
                 <Box sx={{display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'start', width:'75%'}}>
                     {/* Education */}
-                    <Box sx={{width:'100%', borderRight:'1px solid gray', marginRight:'1rem', display:'flex', flexDirection:'column'}}>
+                    <Box sx={{width:'100%', display:'flex', flexDirection:'column'}}>
                         <Typography variant='h2'>Education</Typography>
                         <Box sx={{display:'flex', flexDirection:'column', margin:'1rem'}}>
                             <Typography variant='body' fontWeight='600'>Columbia University in the City of New York</Typography>
@@ -49,10 +59,39 @@ const Home = () => {
                         </Box>
                     </Box>
                     {/* Skills */}
-                    <Box sx={{width:'100%'}}>
+                    <Box sx={{width:'100%', borderLeft:'1px solid gray', paddingLeft:'1rem'}}>
                         <Typography variant='h2'>Skill</Typography>
-                        <Box sx={{display:'flex', flexDirection:'row', flexWrap:'wrap'}}>
-                            {skills.map( ele => <Tag key={ele} name={ele}/>)}
+                        <Box sx={{paddingLeft:'1rem', marginTop:'1rem'}}>
+                            {/* Front End */}
+                            <Box sx={{display:'flex', flexDirection:'column'}}>
+                                <Box sx={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'min-content', whiteSpace:'nowrap'}}>
+                                    <Typography variant="h3">Front End</Typography>
+                                    <Box sx={{height:'6px', width:'50%', backgroundColor:'secondary.main', borderRadius:'5px'}}/>
+                                </Box>
+                                <Box sx={{display:'flex', flexDirection:'row', flexWrap:'wrap'}}>
+                                    {frontendSkills.map( ele => <Tag key={ele} name={ele}/>)}
+                                </Box>
+                            </Box>
+                            {/* Back End */}
+                            <Box sx={{display:'flex', flexDirection:'column'}}>
+                                <Box sx={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'min-content', whiteSpace:'nowrap'}}>
+                                    <Typography variant="h3">Back End</Typography>
+                                    <Box sx={{height:'6px', width:'50%', backgroundColor:'secondary.main', borderRadius:'5px'}}/>
+                                </Box>
+                                <Box sx={{display:'flex', flexDirection:'row', flexWrap:'wrap'}}>
+                                    {backendSkills.map( ele => <Tag key={ele} name={ele}/>)}
+                                </Box>
+                            </Box>
+                            {/* Others */}
+                            <Box sx={{display:'flex', flexDirection:'column'}}>
+                                <Box sx={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'min-content', whiteSpace:'nowrap'}}>
+                                    <Typography variant="h3">Other</Typography>
+                                    <Box sx={{height:'6px', width:'50%', backgroundColor:'secondary.main', borderRadius:'5px'}}/>
+                                </Box>
+                                <Box sx={{display:'flex', flexDirection:'row', flexWrap:'wrap'}}>
+                                    {otherSkills.map( ele => <Tag key={ele} name={ele}/>)}
+                                </Box>
+                            </Box>
                         </Box>
                     </Box>
                 </Box>
