@@ -6,6 +6,7 @@ const Home = () => {
     const otherSkills = ['JavaScript','Git','Python', 'RestAPI', 'NumPy', 'Pandas', 'ROS', 'Scikit-Learn', 'PyTorch', 'TensorFlow', 'HTML', 'CSS'];
     const frontendSkills = ['React.JS', 'Material UI', 'Redux.JS',];
     const backendSkills = ['Node.JS', 'Express.JS',  'PostgreSQL', 'MongoDB', 'Sequelize', 'Mongoose'];
+    const language = ['Italian', 'Chinese (Mandarin)', 'English'];
 
     return (
         <Box sx={{paddingTop:'6rem',display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100%'}}>
@@ -29,12 +30,15 @@ const Home = () => {
                     <Typography variant='h1'>About Me</Typography>
                     <Box sx={{height:'6px', width:'4rem', backgroundColor:'secondary.main', borderRadius:'5px'}}/>
                     {/* Intro for About Me */}
-                    <Box sx={{width:'65%', display:'flex', justifyContent:'center'}}>
+                    <Box sx={{width:'65%', display:'flex',flexDirection:'column', justifyContent:'center'}}>
                         <Typography variant='body' sx={{textAlign:'center', padding:'1rem 0 1rem 0'}}>
-                            Throught the year, I learned a lot of skills and tool in the field of engineering. I have professional and formal education in the field of Mechanical Engineering, 
-                            but also technical and practical experience in programming in the field of Software Development Engineering. 
-                            In the Mechanical Engineering field, I am capable of evaluating, designing and building prototypes of products using CAD tools, machinery and eletronic components.
-                            In the Software Engineering field, I am can design, develop and program Full-Stack web application using a combination of Front-End and Back-End tools. 
+                            Throughout the course of the year, I have acquired a diverse set of skills and tools within the realm of engineering. 
+                            My educational background includes formal training in <strong>Mechanical Engineering</strong>, complemented by professional experience. 
+                            In this discipline, I possess the ability to assess, design, and construct prototypes for products utilizing <strong>CAD</strong> tools, <strong>machinery</strong>, and <strong>electronic components</strong>.
+                        </Typography>
+                        <Typography variant='body' sx={{textAlign:'center', padding:'0 0 1rem 0'}}>
+                            Additionally, my expertise extends into <strong>Software Development Engineering</strong>, where I have garnered technical and practical proficiency. 
+                            Within this domain, I excel in the design, development, and programming of <strong>Full-Stack web applications</strong>, employing a comprehensive array of <strong>Front-End</strong> and <strong>Back-End</strong> tools. 
                         </Typography>
                     </Box>
                 </Box>
@@ -96,6 +100,21 @@ const Home = () => {
                     </Box>
                 </Box>
             </Box>
+
+            {/* Projects */}
+            <Box sx={{display:'flex', flexDirection:'column', width:'100%', justifyContent:'center', alignItems:'center', paddingBottom:'1rem'}}>
+                <Box sx={{display:'flex', flexDirection:'column',justifyContent:'center', alignItems:'center', paddingTop:'1rem', paddingBottom:'1rem'}}>
+                    <Typography variant='h1'>Projects</Typography>
+                    <Box sx={{height:'6px', width:'4rem', backgroundColor:'secondary.main', borderRadius:'5px'}}/>
+                    {/* Intro for Projects */}
+                    <Box sx={{width:'65%', display:'flex', justifyContent:'center'}}>
+                        <Typography variant='body' sx={{textAlign:'center', padding:'1rem 0 1rem 0'}}>
+                            In this segment, I present a selection of both personal and client projects that have been undertaken. 
+                            The purpose is to highlight and demonstrate my proficiency in design and programming, showcasing acquired skills and knowledge in these areas.
+                        </Typography>
+                    </Box>
+                </Box>
+            </Box>        
         </Box>
     );
 };
