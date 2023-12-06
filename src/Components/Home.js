@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Typography, Divider } from "@mui/material";
 import Tag from "./Tag";
+import ProjectCard from "./ProjectCard";
 
 const Home = () => {
     const otherSkills = ['JavaScript','Git','Python', 'RestAPI', 'NumPy', 'Pandas', 'ROS', 'Scikit-Learn', 'PyTorch', 'TensorFlow', 'HTML', 'CSS'];
@@ -113,6 +114,12 @@ const Home = () => {
                             The purpose is to highlight and demonstrate my proficiency in design and programming, showcasing acquired skills and knowledge in these areas.
                         </Typography>
                     </Box>
+                </Box>
+                {/* Project List Grid */}
+                <Box sx={{width:'90%', display:'flex', flexDirection:'column', flexWrap:'wrap', justifyContent:'center', alignItems:'center'}}>
+                    <ProjectCard />
+                    <ProjectCard />
+                    <ProjectCard />
                 </Box>
             </Box>        
         </Box>
