@@ -1,22 +1,23 @@
 import { Box, Typography, Button, Divider} from "@mui/material";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
     return (
         <>
             <Box sx={{position:'fixed', width:'100%',height:'6rem', display:'flex', justifyContent:'center', alignItems:'center', backgroundColor:"secondary.light", borderBottom:'1px solid gray'}}>
                 <Box sx={{display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center', width:'80%'}}>
-                    <Box sx={{flexGrow:'1', display:'flex', justifyContent:'center'}}>
+                    <Box sx={{flexGrow:'1', display:'flex', justifyContent:'center', textDecoration:'none'}} component={Link} to='/'>
                         <Typography variant="title" color='secondary.main'>LUCA LIU</Typography>
                     </Box>
                     <Box sx={{flexGrow:'3', display:'flex', flexDirection:'row', maxWidth:'100%', minWidth:'30%', justifyContent:'center', alignItems:'center'}}>
-                        <Button variant="navigation-button">
+                        <Button variant="navigation-button" component={Link} to='/#aboutme'>
                             <Typography variant="navButton">About Me</Typography>
                         </Button>
-                        <Button variant="navigation-button">
-                            <Typography variant="navButton">Skills</Typography>
+                        <Button variant="navigation-button" component={Link} to='/#skills'>
+                            <Typography variant="navButton" >Skills</Typography>
                         </Button>
-                        <Button variant="navigation-button">
+                        <Button variant="navigation-button" component={Link} to='/#projects'>
                             <Typography variant="navButton">Projects</Typography>
                         </Button>
                     </Box>

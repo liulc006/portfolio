@@ -6,10 +6,14 @@ import { ThemeProvider } from "@mui/material/styles";
 import Theme from "./Theme";
 import CssBaseline from "@mui/material/CssBaseline";
 import Footer from "./Footer";
+import ScrollToAnchor from "./ScrollToAnchor";
+import ScrollToTop from "./ScrollToTop";
 
 const App = () => {
     return (
         <ThemeProvider theme={Theme}>
+            <ScrollToTop />
+            <ScrollToAnchor/>
             <CssBaseline />
             <Nav />
             <div style={{minHeight:'95vh'}}>

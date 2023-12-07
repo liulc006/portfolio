@@ -28,7 +28,8 @@ const Home = () => {
             {/* About Me */}
             <Box sx={{display:'flex', flexDirection:'column', width:'100%', backgroundColor:"secondary.lightDark", justifyContent:'center', alignItems:'center', paddingBottom:'1rem'}}>
                 <Box sx={{display:'flex', flexDirection:'column',justifyContent:'center', alignItems:'center', paddingTop:'1rem', paddingBottom:'1rem'}}>
-                    <Typography variant='h1'>About Me</Typography>
+                    {/* aboutme anchor */}
+                    <Typography id='aboutme' variant='h1'>About Me</Typography>
                     <Box sx={{height:'6px', width:'4rem', backgroundColor:'secondary.main', borderRadius:'5px'}}/>
                     {/* Intro for About Me */}
                     <Box sx={{width:'65%', display:'flex',flexDirection:'column', justifyContent:'center'}}>
@@ -65,7 +66,8 @@ const Home = () => {
                     </Box>
                     {/* Skills */}
                     <Box sx={{width:'100%', borderLeft:'1px solid gray', paddingLeft:'1rem'}}>
-                        <Typography variant='h2'>Skill</Typography>
+                        {/* skills anchor */}
+                        <Typography id='skills'variant='h2'>Skill</Typography>
                         <Box sx={{paddingLeft:'1rem', marginTop:'1rem'}}>
                             {/* Front End */}
                             <Box sx={{display:'flex', flexDirection:'column'}}>
@@ -105,7 +107,8 @@ const Home = () => {
             {/* Projects */}
             <Box sx={{display:'flex', flexDirection:'column', width:'100%', justifyContent:'center', alignItems:'center', paddingBottom:'1rem'}}>
                 <Box sx={{display:'flex', flexDirection:'column',justifyContent:'center', alignItems:'center', paddingTop:'1rem', paddingBottom:'1rem'}}>
-                    <Typography variant='h1'>Projects</Typography>
+                    {/* projects anchor */}
+                    <Typography id='projects' variant='h1'>Projects</Typography>
                     <Box sx={{height:'6px', width:'4rem', backgroundColor:'secondary.main', borderRadius:'5px'}}/>
                     {/* Intro for Projects */}
                     <Box sx={{width:'65%', display:'flex', justifyContent:'center'}}>
