@@ -4,10 +4,33 @@ import Tag from "./Tag";
 import ProjectCard from "./ProjectCard";
 
 const Home = () => {
+    // Skills Info
     const otherSkills = ['JavaScript','Git','Python', 'RestAPI', 'NumPy', 'Pandas', 'ROS', 'Scikit-Learn', 'PyTorch', 'TensorFlow', 'HTML', 'CSS'];
     const frontendSkills = ['React.JS', 'Material UI', 'Redux.JS',];
     const backendSkills = ['Node.JS', 'Express.JS',  'PostgreSQL', 'MongoDB', 'Sequelize', 'Mongoose'];
     const language = ['Italian', 'Chinese (Mandarin)', 'English'];
+
+    //Projects Info
+    const projects = [
+        {
+            imgUrl:'../static/inspiration.png',
+            title:'Project 1',
+            tags:['JavaScript', 'React.JS', 'Heroku'],
+            description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac commodo purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.',
+            url: 'http://www.youtube.com',
+            github:'http://www.github.com'
+        },        {
+            title:'Project 2',
+            tags:['JavaScript', 'React.JS', 'PostgreSQL'],
+            description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac commodo purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.',
+            github:'www.github.com'
+        },        {
+            title:'Project 3',
+            tags:['JavaScript', 'React.JS', 'MongoDB'],
+            description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac commodo purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.',
+            url: 'www.youtube.com',
+        },
+    ]
 
     return (
         <Box sx={{paddingTop:'6rem',display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100%'}}>
@@ -120,9 +143,18 @@ const Home = () => {
                 </Box>
                 {/* Project List Grid */}
                 <Box sx={{width:'90%', display:'flex', flexDirection:'column', flexWrap:'wrap', justifyContent:'center', alignItems:'center'}}>
-                    <ProjectCard />
-                    <ProjectCard />
-                    <ProjectCard />
+                    { projects.map( ele => {
+                        return (
+                            <ProjectCard key={ele.title}
+                                imgUrl={ele.imgUrl}
+                                title={ele.title}
+                                tags={ele.tags}
+                                description={ele.description}
+                                url={ele.url}
+                                github={ele.github}
+                            />
+                        );
+                    })}
                 </Box>
             </Box>        
         </Box>
