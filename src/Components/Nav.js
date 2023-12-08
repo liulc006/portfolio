@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Nav = () => {
     return (
         <>
-            <Box sx={{position:'fixed', width:'100%',height:'6rem', display:'flex', justifyContent:'center', alignItems:'center', backgroundColor:"secondary.light", borderBottom:'1px solid gray'}}>
+            <Box sx={{zIndex:'100',position:'fixed', width:'100%',height:'6rem', display:'flex', justifyContent:'center', alignItems:'center', backgroundColor:"secondary.light", borderBottom:'1px solid gray'}}>
                 <Box sx={{display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center', width:'80%'}}>
                     <Box sx={{flexGrow:'1', display:'flex', justifyContent:'center', textDecoration:'none'}} component={Link} to='/'>
                         <Typography variant="title" color='secondary.main'>LUCA LIU</Typography>
@@ -22,7 +22,7 @@ const Nav = () => {
                         </Button>
                     </Box>
                     <Box sx={{flexGrow:'1',display:'flex', justifyContent:'center'}}>
-                        <Button variant="navigation-button">
+                        <Button variant="navigation-button" component={Link} to='/#contactme'>
                             <Typography variant="navButton">Contact <span style={{fontWeight:'700'}}>Me</span></Typography>
                         </Button>
                     </Box>
