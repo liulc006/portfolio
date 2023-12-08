@@ -8,6 +8,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Footer from "./Footer";
 import ScrollToAnchor from "./ScrollToAnchor";
 import ScrollToTop from "./ScrollToTop";
+import SideBar from "./SideBar";
 
 const App = () => {
     return (
@@ -16,6 +17,7 @@ const App = () => {
             <ScrollToAnchor/>
             <CssBaseline />
             <Nav />
+            <SideBar />
             <div style={{minHeight:'95vh'}}>
                 <Routes>
                     <Route path="/" element={<Home />}/>
