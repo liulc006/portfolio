@@ -2,6 +2,8 @@ import React from "react";
 import { Box, Typography, Button } from "@mui/material";
 import Tag from "./Tag";
 import { Link } from "react-router-dom";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import WebIcon from '@mui/icons-material/Web';
 
 const ProjectCard = ( props ) => {
     const { title, tags, description, url, github, imgUrl} = props;
@@ -21,14 +23,16 @@ const ProjectCard = ( props ) => {
                 <Typography variant="body">
                     {description}
                 </Typography>
-                <Box sx={{display:'flex', flexDirection:'row', justifyContent:'right', alignItems:'center', margin:'1rem'}}>
+                <Box sx={{display:'flex', flexDirection:'row', justifyContent:'left', alignItems:'center', margin:'1rem'}}>
                     {github ? 
-                    <Button variant="navigation-button" component={Link} to={github} target="_blank">
+                    <Button variant="outlined" component={Link} to={github} target="_blank" sx={{marginRight:'.5rem'}}>
+                        <GitHubIcon/>
                         <Typography variant="navButton">GitHub</Typography>
                     </Button>
                     : null}
                     {url ? 
                     <Button variant="outlined" component={Link} to={url} target="_blank">
+                        <WebIcon />
                         <Typography variant="navButton">Visit</Typography>
                     </Button>
                     : null}
