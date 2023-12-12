@@ -16,9 +16,13 @@ const Footer = () => {
             <Box sx={{marginBottom:'1rem', width:'90%', display:'flex', flexDirection:'row', justifyContent:'space-evenly', alignItems:'start'}}>
                 <Box id='contactme' sx={{flexBasis:'1', display:'flex', flexDirection:'column'}}>
                     <Typography variant="h2">Contact Me</Typography>
-                    <Typography variant="body">Subject</Typography>
+                    {/* <Typography variant="body">Subject</Typography>
                     <Typography variant="body">Name</Typography>
-                    <Typography variant="body">Body</Typography>
+                    <Typography variant="body">Body</Typography> */}
+                    <Button href='mailto:lucaliu96@gmail.com?Subject=Portfolio Inquiry'>
+                        <Typography variant="body">EMAIL: lucaliu96@gmail.com</Typography>
+                    </Button>
+                    
 
 
                 </Box>
