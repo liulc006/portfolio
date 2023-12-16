@@ -13,9 +13,9 @@ const ProjectCard = ( props ) => {
             {/* Image Content */}
             <Box component='img' alt='Project Image' src={imgUrl || '../static/placeholder-project.jpg'} sx={{width:'50%', height:'auto',objectFit:'cover'}}/>
             {/* Description Content */}
-            <Box sx={{ padding:'1rem'}}>
-                <Typography variant="h2">{title}</Typography>
-                <Box sx={{display:'flex', flexDirection:'row', flexWrap:'wrap'}}>
+            <Box sx={{ padding:'1rem', display:'flex', flexDirection:'column', justifyContent:'start', alignContent:'center', width:'100%'}}>
+                <Typography variant="h2" sx={{textAlign:'center'}}>{title}</Typography>
+                <Box sx={{display:'flex', flexDirection:'row', flexWrap:'wrap', justifyContent:'center', alignItems:'center'}}>
                     {tags.map(ele => { return (
                         <Tag key={[title,ele].join(' ')} name={ele}/>
                     )})}

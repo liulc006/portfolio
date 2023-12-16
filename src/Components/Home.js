@@ -13,22 +13,25 @@ const Home = () => {
     //Projects Info
     const projects = [
         {
-            imgUrl:'../static/inspiration.png',
-            title:'Project 1',
+            imgUrl:'../static/SWG.png',
+            title:'Smile With Grace Dental Care',
             tags:['JavaScript', 'React.JS', 'Heroku'],
-            description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac commodo purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.',
-            url: 'http://www.youtube.com',
-            github:'http://www.github.com'
+            description:'Smile With Grace Dental Care, located in Ridgefield Park, NJ, is a newly established dental clinic offering a range of services provided by experienced professionals from esteemed institutions. My role involved designing and developing their online presence to enhance communication with current and potential clients. The website facilitates contact through an email form or direct phone calls for customer inquiries.',
+            url: 'https://swg-dentalcare.onrender.com',
         },        {
-            title:'Project 2',
+            imgUrl:'../static/PetFoodie.png',
+            title:'Pet Foodie - ECommerce',
             tags:['JavaScript', 'React.JS', 'PostgreSQL'],
-            description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac commodo purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.',
-            github:'www.github.com'
+            description:'Pet Foodie represents an E-Commerce initiative focused on retailing and evaluating pet food products. Employing PostgreSQL, Express.js, Node.js, and React.js, this project is meticulously crafted. It encompasses sophisticated features, including a secure login/registration system, OAuth integration with GitHub and Google GMAIL, and seamless payment processing through the Stripe API.',
+            github:'https://github.com/liulc006/Pet-Foodie',
+            url:'https://pet-foddie-ecommerce.onrender.com'
         },        {
-            title:'Project 3',
+            imgUrl:'../static/Goji.png',
+            title:'GOJI - Dog Walker Service',
             tags:['JavaScript', 'React.JS', 'MongoDB'],
-            description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac commodo purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.',
-            url: 'www.youtube.com',
+            description:'Goji, a cutting-edge pet service web application, links pet owners with diverse service providers offering services like dog walking, grooming, and pet day care. Tailored for both pet owners and service providers, the platform features two portals—one for pet owners to find specific services and another for service providers to offer their services part-time or full-time. Developed with the PERN stack, the project includes a Google Maps API to display the general locations of various service providers.',
+            url: 'https://goji-dogwalker-project.onrender.com',
+            github:'https://github.com/liulc006/goji-capstone'
         },
     ]
 
