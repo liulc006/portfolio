@@ -37,8 +37,8 @@ const Home = () => {
 
     return (
         <Box sx={{paddingTop:'6rem',display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100%'}}>
-            <Box sx={{minHeight:'50vh', width:'75%', display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center'}}>
-                <Box sx={{flex:'2',display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'start', height:'100%', paddingLeft:'1rem'}}>
+            <Box sx={{minHeight:'50vh', width:'75%', display:'flex', flexDirection:{xs:'column-reverse', md:'row'}, justifyContent:'center', alignItems:'center'}}>
+                <Box sx={{flex:'2',display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'start', height:'100%', paddingLeft:'1rem', margin:'1rem', textAlign:{xs:'center', md:'left'}}}>
                     <Typography variant="h1">Welcome! I'm Luca Liu</Typography>
                     <Typography variant="h2">Software Development Engineer & Freelancer</Typography>
                     <Typography variant="body">
@@ -46,7 +46,7 @@ const Home = () => {
                         My focus lies in the dynamic realm of web development, where I thrive on transforming ideas into functional and elegant applications. 
                     </Typography>
                 </Box>
-                <Box sx={{flex:'1', backgroundColor:'secondary.main', display:'flex', justifyContent:'center', alignItems:'center', aspectRatio:'1/1', borderRadius:'100%'}}>
+                <Box sx={{flex:'1', backgroundColor:'secondary.main', display:'flex', justifyContent:'center', alignItems:'center', aspectRatio:'1/1', borderRadius:'100%', margin:'1rem'}}>
                     <Box component="img" alt="Profile Picture" src="../static/profile.jpeg" sx={{maxWidth:'90%', padding:'1rem',borderRadius:'100%', aspectRatio:'1/1', objectFit:'contain'}}/>
                 </Box>
             </Box>
@@ -70,7 +70,7 @@ const Home = () => {
                         </Typography>
                     </Box>
                 </Box>
-                <Box sx={{display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'start', width:'75%'}}>
+                <Box sx={{display:'flex', flexDirection:{xs:'column',md:'row'}, justifyContent:'center', alignItems:'start', width:'75%'}}>
                     {/* Education */}
                     <Box sx={{width:'100%', display:'flex', flexDirection:'column'}}>
                         <Typography variant='h2'>Education</Typography>
@@ -91,7 +91,7 @@ const Home = () => {
                         </Box>
                     </Box>
                     {/* Skills */}
-                    <Box sx={{width:'100%', borderLeft:'1px solid gray', paddingLeft:'1rem'}}>
+                    <Box sx={{width:'100%', borderLeft:{xs:'0px',md:'1px solid gray'}, paddingLeft:{xs:'0',md:'1rem'}}}>
                         {/* skills anchor */}
                         <Typography id='skills'variant='h2'>Skill</Typography>
                         <Box sx={{paddingLeft:'1rem', marginTop:'1rem'}}>
