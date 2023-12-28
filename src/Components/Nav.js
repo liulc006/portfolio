@@ -39,12 +39,12 @@ const Nav = () => {
                             <Typography variant="navButton">Contact <span style={{fontWeight:'700'}}>Me</span></Typography>
                         </Button>
                     </Box>
-                    {/* Mobile Version */}
-                    <Box sx={{display:{xs:'flex', md:'none'},flexGrow:'.1'}}>
-                        <Button onClick={(ev)=>{handleMenu(ev)}}>
-                            <MenuIcon />
-                        </Button>
-                    </Box>
+                </Box>
+                {/* Mobile Version */}
+                <Box sx={{display:{xs:'flex', md:'none', position:'absolute', right:'1rem'}}}>
+                    <Button onClick={(ev)=>{handleMenu(ev)}}>
+                        <MenuIcon />
+                    </Button>
                 </Box>
             </Box>
             {/* slide menu */}
