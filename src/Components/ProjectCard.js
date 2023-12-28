@@ -9,9 +9,9 @@ const ProjectCard = ( props ) => {
     const { title, tags, description, url, github, imgUrl} = props;
 
     return (
-        <Box sx={{display:'flex', flexDirection:'row', border:'1px solid gray', borderRadius:'10px', backgroundColor:"secondary.lightDark", overflow:'hidden', margin:'1rem 0 1rem 0'}}>
+        <Box sx={{display:'flex', flexDirection:{xs:'column', md:'row'}, border:'1px solid gray', borderRadius:'10px', backgroundColor:"secondary.lightDark", overflow:'hidden', margin:'1rem 0 1rem 0'}}>
             {/* Image Content */}
-            <Box component='img' alt='Project Image' src={imgUrl || '../static/placeholder-project.jpg'} sx={{width:'50%', height:'auto',objectFit:'cover'}}/>
+            <Box component='img' alt='Project Image' src={imgUrl || '../static/placeholder-project.jpg'} sx={{width:{xs:'100%',md:'50%'}, height:{xs:'auto',md:'auto'},objectFit:'cover'}}/>
             {/* Description Content */}
             <Box sx={{ padding:'1rem', display:'flex', flexDirection:'column', justifyContent:'start', alignContent:'center', width:'100%'}}>
                 <Typography variant="h2" sx={{textAlign:'center'}}>{title}</Typography>

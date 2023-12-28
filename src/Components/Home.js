@@ -145,7 +145,7 @@ const Home = () => {
                     </Box>
                 </Box>
                 {/* Project List Grid */}
-                <Box sx={{width:'90%', display:'flex', flexDirection:'column', flexWrap:'wrap', justifyContent:'center', alignItems:'center'}}>
+                <Box sx={{width:{xs:'70%',md:'80%'}, display:'flex', flexDirection:'column', flexWrap:'wrap', justifyContent:'center', alignItems:'center'}}>
                     { projects.map( ele => {
                         return (
                             <ProjectCard key={ele.title}
