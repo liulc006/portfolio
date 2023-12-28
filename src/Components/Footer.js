@@ -13,8 +13,8 @@ const Footer = () => {
 
     return (
         <Box sx={{backgroundColor:'secondary.main', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', padding:'1rem'}}>
-            <Box sx={{marginBottom:'1rem', width:'90%', display:'flex', flexDirection:'row', justifyContent:'space-evenly', alignItems:'start'}}>
-                <Box id='contactme' sx={{flexBasis:'1', display:'flex', flexDirection:'column'}}>
+            <Box sx={{marginBottom:'1rem', width:'90%', display:'flex', flexDirection:{xs:'column', md:'row'}, justifyContent:'space-evenly', alignItems:'start'}}>
+                <Box id='contactme' sx={{flexBasis:'1', display:'flex', flexDirection:'column', marginBottom:'1rem'}}>
                     <Typography variant="h2">Contact Me</Typography>
                     {/* <Typography variant="body">Subject</Typography>
                     <Typography variant="body">Name</Typography>
@@ -22,11 +22,8 @@ const Footer = () => {
                     <Button href='mailto:lucaliu96@gmail.com?Subject=Portfolio Inquiry'>
                         <Typography variant="body">EMAIL: lucaliu96@gmail.com</Typography>
                     </Button>
-                    
-
-
                 </Box>
-                <Box sx={{flexBasis:'1', display:'flex', flexDirection:'column'}}>
+                <Box sx={{flexBasis:'1', display:'flex', flexDirection:'column', marginBottom:'1rem'}}>
                     <Typography variant="h2">Follow Me</Typography>
                     <Box sx={{display:'flex', flexDirection:'row', justifyContent:'space-evenly', alignItems:'center'}}>
                         <Button component={Link} to='https://github.com/liulc006' target='_blank'>
