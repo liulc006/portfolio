@@ -43,7 +43,7 @@ const Footer = () => {
             {startYear === currentYear ?
                 <Typography variant="body">© 2023 Luca Liu</Typography>
             :
-                <Typography variant="body">© 2023 - {year} Luca Liu</Typography>
+                <Typography variant="body">© 2023 - {currentYear} Luca Liu</Typography>
             }
         </Box>
     )
