@@ -47,7 +47,7 @@ const Home = () => {
                     </Typography>
                 </Box>
                 <Box sx={{flex:'1', backgroundColor:'secondary.main', display:'flex', justifyContent:'center', alignItems:'center', aspectRatio:'1/1', borderRadius:'100%', margin:'1rem'}}>
-                    <Box component="img" alt="Profile Picture" src="../static/profile.jpeg" sx={{maxWidth:'90%', padding:'1rem',borderRadius:'100%', aspectRatio:'1/1', objectFit:'contain'}}/>
+                    <Box component="img" alt="Profile Picture" src="../static/profile.jpg" sx={{maxWidth:'90%', padding:'1rem',borderRadius:'100%', aspectRatio:'1/1', objectFit:'contain'}}/>
                 </Box>
             </Box>
 
